@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ATS ELGI</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_products">Pick Product Line</string>
+    <string name="title_activity_wheel_service">Wheel Service</string>
+    <string name="title_activity_wheel_aligner">Wheel Aligner</string>
+    <string name="title_activity_d3_wheel_aligner">3D Wheel Aligner</string>
+    <string name="title_activity_elegant_xp">Elegant XP</string>
+    <string name="title_section1">Images</string>
+    <string name="title_section2">Videos</string>
+    <string name="title_section3">Features</string>
+    <string name="title_section4">Specs</string>
+    <string name="image_fragment_nextbutton">nextButton</string>
+    <string name="image_fragment_prevButton">prevButton</string>
+    <string name="image_fragment_images">images</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="enquireproduct_button">Enquire about this Product</string>
+    <string name="backButton">&lt;&lt; BACK</string>
+
+    <string-array name="text">
+        <item name="first">NO OF BRUSHES
+Vertical brush   - 2 Nos
+Horizontal brush - 1Nos
+Wheel brush      - 2 Nos</item>
+        <item name="secound">Recommended Bay Dimension
+Length           -10000 mm
+Width 			 - 4600 mm
+Height			 - 5000 mm</item>
+        <item name="third">MAX.VEHICLE ACCESS
+Length			 - 5200 mm
+Width			 - 2000 mm
+Height			 - 2300 mm</item>
+        <item name="four">WASHING SYSTEM	- PLC AUTOMATION</item>
+     
+    </string-array>
+
+</resources>

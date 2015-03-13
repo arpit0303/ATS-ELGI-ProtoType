@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_horizontal_margin"
+        android:layout_marginRight="@dimen/list_horizontal_margin"
+        android:layout_marginTop="@dimen/list_vertical_margin" >
+
+        <TextView
+            android:id="@+id/specs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/list_horizontal_margin"
+            android:layout_toLeftOf="@+id/specsValue"
+            android:text="hello"
+            android:textColor="@color/Text_gray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/specs_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/specs"
+            android:layout_marginLeft="3dp"
+            android:layout_below="@id/specs"
+            android:layout_marginBottom="@dimen/list_vertical_margin"
+            android:layout_toLeftOf="@+id/imageTitle"
+            android:text="hello"
+            android:textSize="12sp"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/imageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/specs_details"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/specs_details"
+            android:text="TextView"
+            android:textSize="12sp"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/specsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/specs_details"
+            android:layout_alignTop="@id/specs"
+            android:layout_alignBottom="@id/specs"
+            android:layout_alignParentRight="true"
+            android:text="TextView"
+            android:textColor="@color/Text_gray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    
+    <ImageView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_fragment_images"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/enquireproduct_button"
+        android:background="@color/yellow"
+        android:textColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignLeft="@+id/imageTitle"
+        android:layout_alignRight="@+id/details"
+        android:layout_below="@+id/imageTitle"
+        android:layout_marginTop="8dp" >
+
+    <TextView
+        android:id="@+id/ImageDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+         />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/imageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/details"
+        android:layout_below="@+id/details"
+        android:layout_marginTop="8dp"
+        android:text="Large Text"
+        android:textSize="17sp"
+        android:textColor="@color/Text_gray"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/details"
+        android:layout_alignTop="@+id/prevButton"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:contentDescription="@string/image_fragment_nextbutton"
+        android:src="@drawable/next" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:src="@drawable/start_click" />
+
+    <ImageButton
+        android:id="@+id/prevButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/details"
+        android:layout_alignLeft="@+id/details"
+        android:layout_marginBottom="69dp"
+        android:background="@null"
+        android:contentDescription="@string/image_fragment_prevButton"
+        android:src="@drawable/prev" />
+
+</RelativeLayout>

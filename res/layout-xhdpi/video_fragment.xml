@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:id="@+id/VideoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video"
+        android:layout_below="@+id/video"
+        android:layout_marginTop="8dp"
+        android:text="Large Text"
+        android:textSize="17sp"
+        android:textColor="@color/Text_gray"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/VideoDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/VideoTitle"
+        android:layout_below="@+id/VideoTitle"
+        android:text="TextView"
+        android:textColor="@color/gray" />
+
+    <ImageButton
+        android:id="@+id/replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/VideoTitle"
+        android:layout_alignRight="@+id/video"
+        android:background="@null"
+        android:src="@drawable/replay" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/enquireproduct_button"
+        android:background="@color/yellow"
+        android:textColor="@android:color/white" />
+    
+     <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button1"
+        android:background="@null"
+        android:src="@drawable/start_click" />
+
+    <ImageButton
+        android:id="@+id/mediaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/VideoTitle"
+        android:layout_toLeftOf="@+id/replay"
+        android:background="@null"
+        android:src="@drawable/resume" />
+
+</RelativeLayout>
